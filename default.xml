@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="default" fetch=".."/>
+  <remote name="private" fetch="ssh://git@github.com"/>
+  <remote name="gnu" fetch="https://gcc.gnu.org" revision="master"/>
+  <remote name="savannah" fetch="https://git.savannah.gnu.org" revision="master"/>
+  <remote name="sourceware" fetch="https://sourceware.org" revision="master"/>
+  <remote name="github" fetch="https://github.com" revision="master"/>
+  <remote name="gitlab" fetch="https://gitlab.com" revision="master"/> 
+  <remote name="gnome" fetch="https://gitlab.gnome.org" revision="master"/>          
+  <remote name="freedesktop" fetch="https://gitlab.freedesktop.org" revision="master"/>
+  <remote name="busybox" fetch="https://git.busybox.net" revision="master"/>
+  <remote name="openssl" fetch="https://git.openssl.org" revision="master"/>
+  <default revision="master" remote="default" sync-c="true" sync-j="80"/>
+
+  <!-- GNU Projects -->
+  <project name="git/binutils-gdb.git" path="gnu/binutils" remote="sourceware" revision="master"/>
+  <project name="git/glibc.git" path="gnu/glibc" remote="sourceware" revision="master"/>
+  <project name="git/bash.git" path="gnu/bash" remote="savannah" revision="master"/>
+  <project name="git/diffutils.git" path="gnu/diffutils" remote="savannah" revision="master"/>
+  <project name="git/coreutils.git" path="gnu/coreutils" remote="savannah" revision="master"/>
+  <project name="git/grep.git" path="gnu/grep" remote="savannah" revision="master"/>
+  <project name="git/sed.git" path="gnu/sed" remote="savannah" revision="master"/>
+  <project name="git/make.git" path="gnu/make" remote="savannah" revision="master"/>
+  <project name="git/gzip.git" path="gnu/gzip" remote="savannah" revision="master"/>
+  <project name="git/tar.git" path="gnu/tar" remote="savannah" revision="master"/>
+  <project name="git/bison.git" path="gnu/bison" remote="savannah" revision="master"/>
+  <project name="git/texinfo.git" path="gnu/texinfo" remote="savannah" revision="master"/>
+  <project name="git/libtool.git" path="gnu/libtool" remote="savannah" revision="master"/>
+  <project name="git/gcc.git" path="gnu/gcc" remote="gnu" revision="master"/>
+  
+  <!-- GNOME Projects -->
+  <project name="GNOME/gtk.git" path="gnome/gtk" remote="gnome" revision="master"/>
+  <project name="GNOME/glib.git" path="gnome/glib" remote="gnome" revision="master"/>
+  <project name="GNOME/pango.git" path="gnome/pango" remote="gnome" revision="master"/>
+  <project name="GNOME/gdk-pixbuf.git" path="gnome/gdk-pixbuf" remote="gnome" revision="master"/>
+  <project name="GNOME/gobject-introspection.git" path="gnome/gobject-introspection" remote="gnome" revision="master"/>
+  <project name="GNOME/gtk-doc.git" path="gnome/gtk-doc" remote="gnome" revision="master"/>
+  <project name="GNOME/sysprof.git" path="gnome/sysprof" remote="gnome" revision="master"/>
+  
+  <!-- Extra Projects -->
+  <project name="wayland/wayland" path="extras/wayland" remote="freedesktop" revision="master"/>
+  <project name="jadahl/wayland-protocols.git" path="extras/wayland-protocols" remote="freedesktop" revision="wip/meson-meson-0.53"/>
+  <project name="cairo/cairo.git" path="extras/cairo" remote="freedesktop" revision="master"/>
+  <project name="federicomenaquintero/bzip2.git" path="extras/bzip2" remote="gitlab" revision="master"/>
+  <project name="busybox" path="extras/busybox" remote="busybox" revision="master"/>
+  <project name="openssl.git" path="extras/openssl" remote="openssl" revision="master"/>
+  <project name="crosstool-ng/crosstool-ng" path="extras/crosstool-ng" remote="github" revision="master"/>
+  <project name="World/libcloudproviders.git" path="extras/cloudproviders" remote="gnome" revision="master"/>
+  <project name="ThomasDickey/ncurses-snapshots.git" path="gnu/ncurses" remote="github" revision="master"/>
+  <project name="ebassi/graphene.git" path="extras/graphene" remote="github" revision="master"/>
+  <project name="fribidi/fribidi.git" path="extras/fribidi" remote="github" revision="master"/>
+  <project name="anholt/libepoxy.git" path="extras/epoxy" remote="github" revision="master"/> 
+  <project name="lazka/libsass.git" path="extras/sass" remote="github" revision="meson"/>
+  <project name="lazka/sassc.git" path="extras/sassc" remote="github" revision="meson"/>
+</manifest>
